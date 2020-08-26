@@ -5,7 +5,7 @@ public class ValorDiaria extends CalculoValor {
 	private final double DIA = 86400000;
 
 	public ValorDiaria(double valorDiaria) {
-		this.valorParaCalculo = valorDiaria;
+		valorParaCalculo = valorDiaria;
 	}
 
 	@Override

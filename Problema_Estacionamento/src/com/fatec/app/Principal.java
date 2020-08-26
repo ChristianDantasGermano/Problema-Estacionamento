@@ -1,10 +1,12 @@
 package com.fatec.app;
 
+import java.sql.Date;
+
 public class Principal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Date data = new Date();
+		Date data = new Date(0);
 		Veiculo v = new Passeio(data.getTime());
 
 		ContaEstacionamento c = new ContaEstacionamento();
@@ -13,7 +15,7 @@ public class Principal {
 		CalculoValor cv = null;
 
 		if (v.tempo < (15 * 3600000)) {
-			cv = new ValorDiaria(c.veiculo.valor);
+			cv = (CalculoValor) new ValorDiaria(c.veiculo.valor);
 
 		}
 
