@@ -5,10 +5,9 @@ class ContaEstacionamento {
 	private CalculoValor calculo; // compondo a classe ContaEstacionamento
 	// com um objeto do tipo CalculoValor
 	public Veiculo veiculo;
-	private double inicio, fim;
 
 	public double valorConta() {
-		return calculo.valorConta(fim - inicio, veiculo);
+		return calculo.valorConta(veiculo.tempo, veiculo);
 	}
 
 	// valorDiaria, valorMensal, valor....
